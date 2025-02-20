@@ -138,7 +138,7 @@ ul li a:hover {
   gap: 1rem;
 }
 
-.action__btns button {
+.action__btns a {
   font-size: 1rem;
   font-weight: 600;
   letter-spacing: 2px;
@@ -283,6 +283,8 @@ ul li a:hover {
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .contact-info {
@@ -291,11 +293,9 @@ ul li a:hover {
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-
 }
 
 .contact-info ul {
-  /* list-style-type: none; */
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -308,8 +308,7 @@ ul li a:hover {
 }
 
 .contact-info a {
-  color: #a855f7;
-  ;
+  color: var(--primary-color);
   text-decoration: none;
 }
 
@@ -341,8 +340,7 @@ ul li a:hover {
 }
 
 .contact-form .submit-btn {
-  background-color:   var(--primary-color);
-  ;
+  background-color: var(--primary-color);
   color: white;
   border: none;
   padding: 10px 20px;
@@ -352,4 +350,155 @@ ul li a:hover {
 
 .contact-form .submit-btn:hover {
   background-color: var(--primary-color-dark);
+}
+
+/* Responsive Design for Contact Section */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .contact-info,
+  .contact-form {
+    flex: 1 1 100%; /* Take full width on smaller screens */
+  }
+
+  .contact-info ul {
+    align-items: center; /* Center align links on smaller screens */
+  }
+
+  .contact-info ul li {
+    text-align: center; /* Center align list items */
+  }
+
+  .contact-form {
+    padding: 15px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    padding: 8px;
+  }
+
+  .contact-form .submit-btn {
+    width: 100%; /* Make button full width */
+  }
+}
+/* SECTION 3: Education */
+.education-section {
+  padding: 50px 20px;
+  background-color: #fff;
+}
+
+.education-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: var(--primary-color);
+}
+
+.education-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.education-item {
+  background-color: var(--extra-light);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.education-item h3 {
+  font-size: 1.5rem;
+  color: var(--text-dark);
+  margin-bottom: 10px;
+}
+
+.education-item .institution {
+  font-size: 1.2rem;
+  color: var(--primary-color-dark);
+  margin-bottom: 5px;
+}
+
+.education-item .duration {
+  font-size: 1rem;
+  color: var(--text-light);
+  margin-bottom: 10px;
+}
+
+.education-item .description {
+  font-size: 1rem;
+  color: var(--text-light);
+  line-height: 1.5;
+}
+
+/* SECTION 4: Experience */
+.experience-section {
+  padding: 50px 20px;
+  background-color: var(--extra-light);
+}
+
+.experience-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: var(--primary-color);
+}
+
+.experience-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.experience-item {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.experience-item h3 {
+  font-size: 1.5rem;
+  color: var(--text-dark);
+  margin-bottom: 10px;
+}
+
+.experience-item .company {
+  font-size: 1.2rem;
+  color: var(--primary-color-dark);
+  margin-bottom: 5px;
+}
+
+.experience-item .duration {
+  font-size: 1rem;
+  color: var(--text-light);
+  margin-bottom: 10px;
+}
+
+.experience-item .description {
+  font-size: 1rem;
+  color: var(--text-light);
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.experience-item .projects h4 {
+  font-size: 1.2rem;
+  color: var(--text-dark);
+  margin-bottom: 10px;
+}
+
+.experience-item .projects ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.experience-item .projects ul li {
+  font-size: 1rem;
+  color: var(--text-light);
+  margin-bottom: 5px;
 }
