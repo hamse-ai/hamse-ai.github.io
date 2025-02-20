@@ -21,15 +21,15 @@
         </label>
         <input type="checkbox" name="check" id="check" />
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Resume</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <!-- <li><a href="#">Resume</a></li>
+          <li><a href="#">Portfolio</a></li> -->
+          <li><a href="#contact" type="POST">Contact</a></li>
         </ul>
       </div>
     </nav>
-    <section class="section">
+    <section class="section" id="home">
       <div class="section__container">
         <div class="content">
           <p class="subtitle">HELLO</p>
@@ -43,12 +43,12 @@
             web projects, ranging from personal blogs to e-commerce platforms.
           </p>
           <div class="action__btns">
-            <button class="hire__me">Hire Me</button>
-            <button class="portfolio">Portfolio</button>
+            <a class="hire__me" href="https://www.linkedin.com/in/hamse-jama-801630317/">Hire Me</a>
+            <!-- <button class="portfolio">Portfolio</button> -->
           </div>
         </div>
         <div class="image">
-          <img src="assets/profile.jpg" alt="profile" />
+          <img src="images/WhatsApp Image 2025-02-20 at 11.23.50 PM.jpeg" height="500px" width="500px" ialt="profile" />
         </div>
       </div>
     </section>
@@ -56,9 +56,9 @@
     <!-- SECTION 2: Skills -->
     <section id="skills" class="skills-section">
       <h2>Skills</h2>
-      <div class="text">
+      <!-- <div class="text">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, perspiciatis iure distinctio quidem aperiam necessitatibus omnis possimus excepturi amet quos rerum? Perferendis repellat natus saepe quaerat quibusdam neque recusandae optio?
-      </div>
+      </div> -->
 
       <div class="cells">
         <div class="cell">
@@ -87,6 +87,68 @@
       </div>
     </section>
 
+    <!-- SECTION 3: Education -->
+<section id="about" class="education-section">
+  <h2>Education</h2>
+  <div class="education-container">
+    <div class="education-item">
+      <h3>Bachelor of Software Engineering</h3>
+      <p class="institution">African Leadership University</p>
+      <p class="duration">2024 - 2027</p>
+      <p class="description">
+        Relevant coursework: Data Bases, Web Development, and Software Engineering.
+      </p>
+    </div>
+    <div class="education-item">
+      <h3>High School Diploma</h3>
+      <p class="institution">Al-Bahrayn High School</p>
+      <p class="duration">2020 - 2023</p>
+      <p class="description">
+        Focused on Mathematics, Physics, and Computer Science. Graduated with honors.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 4: Experience -->
+<section id="experience" class="experience-section">
+  <h2>Experience</h2>
+  <div class="experience-container">
+    <div class="experience-item">
+      <h3>Freelance Web Developer</h3>
+      <p class="company">Self-Employed</p>
+      <p class="duration">July 2024 - present</p>
+      <p class="description">
+        Worked with clients to create custom websites and web applications. Managed projects from concept to deployment.
+      </p>
+      <div class="projects">
+        <h4>Projects:</h4>
+        <ul>
+          <!-- <li>Blog Platform: Developed a blogging platform with user authentication.</li> -->
+          <li>Landing Pages: Designed high-conversion landing pages for businesses. e.g <a href="https://kiraka.co">kiraka</a> </li>
+        </ul>
+      </div>
+    </div>
+  
+      <div class="experience-item">
+        <h3>Web Adminstrator</h3>
+        <p class="company">CBATV</p>
+        <p class="duration">August 2023 - Oct 2024</p>
+        <p class="description">
+          Maintained wordpress websites for a news station, daily puplished updates while insuring readibility, and filxed technichal problems faced the sites.
+        </p>
+        <div class="projects">
+          <h4>Projects:</h4>
+          <ul>
+            <li><a href="https://cbatv.net">CBATV WEBSITE : </a> </li>
+            <li><a href="https://Somaliland.com">Somaliland WEBSITE : </a> </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 
     <!-- SECTION 4: Contact -->
@@ -102,18 +164,21 @@
       </ul>
     </div>
     <div class="contact-form">
-      <form action="#">
+      <form action="https://formspree.io/f/mgvodkzv" method="POST">
         <label for="name">Your Name:</label>
         <input type="text" id="name" name="name" required />
+        
         <label for="email">Your Email:</label>
         <input type="email" id="email" name="email" required />
+        
         <label for="message">Your Message:</label>
         <textarea id="message" name="message" rows="5" required></textarea>
+        
         <button type="submit" class="submit-btn">Send Message</button>
       </form>
     </div>
-  </div>
 </section>
 
+  <script src="./index.js"></script>
   </body>
 </html>
